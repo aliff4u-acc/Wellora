@@ -1,0 +1,336 @@
+/* reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fcf9;
+    color: #1f2933;
+    line-height: 1.6;
+}
+
+/* header dan navbar */
+header{
+    width: 90%;
+    max-width: 1100px;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0 4px 20px rgba(18, 55, 42, 0.06);
+    margin: 10px auto 30px auto;
+    padding: 16px 32px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.nav-logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: #12372a;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-item {
+    color: #1f2933;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+.nav-item:hover, .nav-item.active {
+    color: #2ead70;
+    transition: color 0.2s ease;
+}
+.btn-unduh {
+    background-color: #2eAD70;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(46, 173, 112, 0.25);
+}
+.btn-unduh:hover {
+    background-color: #248c5a;
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+}
+
+/* hero section */
+.hero{
+    display: flex;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.badge-hero{
+    background-color: #e7f7ee;
+    color: #2eAD70;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.gambar{
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+}
+.judul-hero{
+    font: size 48px;
+    color: #12372a;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+.deskripsi-hero{
+    font-size: 16px;
+    color: #52606D;
+    line-height: 1.65;
+    margin-bottom: 30px;
+}
+.btn-hero{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.btn-ios{
+    background-color: #2eAD70;
+    padding: 10px 22px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(46, 173, 112, 0.25);
+}
+.btn-android{
+    border: 2px solid #2eAD70;
+    background-color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 22px;
+    color: #2eAD70;
+    border-radius: 25px;
+    font-size: 14px;
+}
+.btn-ios:hover{
+     background-color: #248c5a;
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+}
+.btn-android:hover{
+    background-color: #ffffff;
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+}
+.button-hero{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.fitur{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto 60px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  min-height: 190px;
+  padding: 20px 16px;
+  background-color: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(18, 55, 42, 0.07);
+  gap: 16px;
+  color: #12372a;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover{
+    background-color: #ffffff;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(18, 55, 42, 0.12);
+}
+
+.card h2{
+    font-size: 16px;
+    line-height: 1.35;
+}
+
+.card p{
+    color: #52606D;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.card-icon{
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    color: #2aad70;
+    font-size: 20px;
+    background-color: #e7f7ee;
+    
+}
+.solusi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto 70px;
+    padding: 42px 0;
+}
+
+.solusi-copy{
+    width: 48%;
+}
+
+.solusi-badge{
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background: #e7f7ee;
+    color: #2aad70;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.solusi-copy h2{
+    max-width: 480px;
+    margin-bottom: 12px;
+    color: #12372a;
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.solusi-desc{
+    margin-bottom: 18px;
+    color: #52606d;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.solusi-list{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 24px;
+    padding: 0;
+    color: #294b3c;
+    font-size: 14px;
+    list-style: none;
+}
+
+.solusi-list li::before{
+    content: "✓";
+    margin-right: 10px;
+    color: #2aad70;
+    font-weight: 800;
+}
+
+.solusi-button{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    border-radius: 24px;
+    background: #2aad70;
+    box-shadow: 0 4px 12px rgba(46, 173, 112, 0.25);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.solusi-button:hover{
+    transform: translateY(-2px);
+    background: #248c5a;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 14px;
+    width: 48%;
+}
+
+.card{
+    display: flex;
+    min-height: 150px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 6px;
+    padding: 22px;
+    border: 2px solid #e8efeb;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 5px 18px rgba(18, 55, 42, 0.06);
+    width: 48%;
+    color: #2eAD70;
+    font-size: 12px;
+}
+
+.card i{
+    color: #2aad70;
+    font-size: 20px;
+}
+
+.card strong{
+    color: #12372a;
+    font-size: 22px;
+    line-height: 1.35;
+}
+
+.card strong small{
+    color: #52606d;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.card strong + span{
+    color: #2AAD70;
+    font-size: 12px;
+    font-weight: 700;
+}

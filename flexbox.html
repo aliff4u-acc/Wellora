@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style> 
+        .container {
+            width: 800px;
+            height: 300px;
+            border: 2px solid black;
+            margin: auto;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        .item {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-radius: 30px;
+            color: white;
+            display: flex;
+            justify-content: center;/*horizon*/
+            align-items: center; /*vertikal*/
+        }
+
+        .container-2 {
+            width: 800px;
+            height: 300px;
+            border: 2px solid black;
+            margin: auto;
+            padding: 10px;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .item {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-radius: 30px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container-3 {
+            width: 800px;
+            height: 300px;
+            border: 2px solid black;
+            margin: auto;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .item {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-radius: 30px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container-4 {
+            width: 800px;
+            height: 300px;
+            border: 2px solid black;
+            margin: auto;
+            padding: 10px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .item {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-radius: 30px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container-5 {
+            width: 800px;
+            height: 300px;
+            border: 2px solid black;
+            margin: auto;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .item {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-radius: 30px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container-6 {
+            width: 800px;
+            height: 300px;
+            border: 2px solid black;
+            margin: auto;
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .item {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-radius: 30px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+     <h3><strong>Justify-content: Space-between</strong></h3>
+     <div class="container">
+        <div class="item"> 1 </div>
+        <div class="item"> 2 </div>
+        <div class="item"> 3 </div>
+        <div class="item"> 19 </div>
+        <div class="item"> 20 </div>    
+    </div>
+
+    <h3><strong>Justify-content: Flex-start</strong></h3>
+    <div class="container-2">
+        <div class="item"> 4 </div>
+        <div class="item"> 5 </div>
+        <div class="item"> 6 </div>
+    </div>
+
+    <h3><strong>Justify-content: Center</strong></h3>
+    <div class="container-3">
+        <div class="item"> 7 </div>
+        <div class="item"> 8 </div>
+        <div class="item"> 9 </div>
+    </div>
+
+    <h3><strong>Justify-content: Flex-end</strong></h3>
+    <div class="container-4">
+        <div class="item"> 10 </div>
+        <div class="item"> 11 </div>
+        <div class="item"> 12 </div>
+    </div>
+
+    <h3><strong>Justify-content: Space-around</strong></h3>
+    <div class="container-5">
+        <div class="item"> 13 </div>
+        <div class="item"> 14 </div>
+        <div class="item"> 15 </div>
+    </div>
+
+    <h3><strong>Justify-content: Space-evenly</strong></h3>
+    <div class="container-6">
+        <div class="item"> 16 </div>
+        <div class="item"> 17 </div>
+        <div class="item"> 18 </div>
+    </div>
+
+</body>
+</html>
