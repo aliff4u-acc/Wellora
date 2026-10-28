@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wellora.com</title>
 
-      <!-- css -->
+       <!-- css -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
       <link rel="stylesheet" href="style.css">
 
@@ -23,11 +23,11 @@
 
         <!-- menu -->
         <nav class="nav-menu">
-            <a href="#"class="nav-item active"> Beranda </a>
-            <a href="#"class="nav-item"> Fitur </a>
-            <a href="#"class="nav-item"> Tentang Kami </a>
-            <a href="#"class="nav-item"> Artikel </a>
-            <a href="#"class="nav-item"> Kontak </a>
+            <a href="#" class="nav-item active"> Beranda </a>
+            <a href="#Tentang Kami" class="nav-item"> Fitur </a>
+            <a href="#Artikel" class="nav-item"> Tentang Kami </a>
+            <a href="#" class="nav-item"> Artikel </a>
+            <a href="#Kontak" class="nav-item"> Kontak </a>
         </nav>
 
              <!-- tombol -->
@@ -37,7 +37,7 @@
 
     </header>
     <!-- Hero -->
-            <section class="hero">
+            <section class="hero" id="Fitur">
             <div class="text-hero">
                  <span class="badge-hero"><i class="fa-solid fa-heart">  
                  </i> Kesehatanmu, Perjalananmu, Prioritasmu</span>
@@ -59,7 +59,7 @@
                 </div>
         </section>
             <section>
-            <section class="fitur">
+            <section class="fitur" id="Fitur">
             <div class="card">
                 <span class="card-icon">
                 <i class="fa-solid fa-person-running" aria-hidden="true"></i>
@@ -116,7 +116,7 @@
             </div>
     </section>
 
-    <section class="solusi">
+    <section class="solusi" id="Tentang Kami">
         <div class="solusi-copy">
             <span class="solusi-badge">Semua yang Anda Butuhkan</span>
             <h2>Solusi Kesehatan Lengkap dalam Satu Aplikasi</h2>
@@ -163,7 +163,7 @@
         </div>
         </section>
 
-        <section class = "about">
+        <section class = "about" id="Artikel">
         <div class="about-kiri">
             <span class="about-badge">
                <i class="fa-solid fa-leaf"></i> Tentang Wellora
@@ -206,21 +206,24 @@
                 <div class="value-desc"> Temukan teman seperjuangan untuk saling berbagi progres dan menyemangati setiap hari.</div>
                    
                     </div>
-                </div>    
+                </div>
 
 
                     </div>
                  </div>
                 </div>
+
             </div>
         </div>
+
         <div class="about-kanan">
             <div class="box-about-kanan">
             <h2 class="tittle-about-kanan"> Perjalanan Kita Bersama </h2>
             <p class="desc-about-kanan"> Sejak diluncurkan, Wellora terus bertumbuh mendampingi puluhan ribu individu mencapai versi terbaik dari diri mereka.
             </p>
 
-               <div class="card-about-kanan">      
+               <div class="card-about-kanan"> 
+                    <div class="card">
                        <div class="card-item">
                           <h2 class="card-item-judul">50K+</h2>
                           <p class="card-item-desc">Pengguna Aktif</p>
@@ -241,14 +244,13 @@
                            <p class="card-item-desc">Rating Aplikasi</p>
                         </div>
 
-
-                        </div>
+                </div> 
 
                 </div> 
         </div>
     </section>  
     
-  <section class="contact-section">
+  <section class="contact-section" id="Kontak">
     <div class="container">
       
       <div class="section-header">
@@ -267,6 +269,7 @@
             <div class="icon-box">
               <i class="fa-solid fa-envelope"></i>
             </div>
+
             <div class="info-text">
               <span class="label">Email Resmi</span>
               <strong>support@wellora.id</strong>
@@ -277,6 +280,7 @@
             <div class="icon-box">
               <i class="fa-solid fa-phone"></i>
             </div>
+
             <div class="info-text">
               <span class="label">Telepon / WhatsApp</span>
               <strong>+62 812-3456-7890</strong>
@@ -287,6 +291,7 @@
             <div class="icon-box">
               <i class="fa-solid fa-location-dot"></i>
             </div>
+
             <div class="info-text">
               <span class="label">Alamat Kantor</span>
               <strong>Gedung Wellora Health Center, Jakarta Selatan, Indonesia</strong>
@@ -297,11 +302,12 @@
             <div class="icon-box">
               <i class="fa-solid fa-clock"></i>
             </div>
+
             <div class="info-text">
               <span class="label">Jam Layanan</span>
               <strong>Senin - Jumat, 08.00 - 17.00 WIB</strong>
             </div>
-          </div>
+           </div>
 
         </div>
 
@@ -316,6 +322,7 @@
                 <label for="nama">Nama Lengkap</label>
                 <input type="text" id="nama" placeholder="Masukkan nama Anda">
               </div>
+
               <div class="form-group">
                 <label for="email">Alamat Email</label>
                 <input type="email" id="email" placeholder="nama@email.com">
@@ -339,10 +346,9 @@
           </form>
         </div>
 
+       </div>
       </div>
-    </div>
   </section>
-
 
   <footer class="footer">
     <div class="container">
@@ -359,97 +365,48 @@
       </p>
 
       <ul class="footer-nav">
-        <li><a href="#">Beranda</a></li>
-        <li><a href="#">Fitur</a></li>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Tentang Kami</a></li>
-        <li><a href="#">Artikel</a></li>
-        <li><a href="#">Kontak</a></li>
+        <li><a href="#"> Beranda</a></li>
+        <li><a href="#"> Fitur</a></li>
+        <li><a href="#"> Dashboard</a></li>
+        <li><a href="#"> Tentang Kami</a></li>
+        <li><a href="#"> Artikel</a></li>
+        <li><a href="#"> Kontak</a></li>
       </ul>
 
       <div class="footer-bottom">
 
         <p>© 2026 Wellora. Seluruh hak cipta dilindungi. Dibuat untuk pembelajaran CSS Flexbox Siswa Kelas X RPL.</p>
-      </div>
+      </div></div>
 
     </div>
   </footer>
-    <body>
 
-    <section class="blog-section">
-        <!-- Subtitle & Title Header -->
-        <div class="header-container">
-            <span class="category-subtitle">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 3V21M12 3L4 6V18L12 21M12 3L20 6V18L12 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                Edukasi & Inspirasi
-            </span>
-            <h1 class="main-title">Artikel & Tips Gaya Hidup Sehat<br>Terkini</h1>
-            <p class="description">
-                Perluas wawasan Anda seputar nutrisi, tips olahraga praktis, dan manajemen stres untuk menjaga vitalitas tubuh sepanjang hari.
-            </p>
-        </div>
+    <section class="back-to-top">
+        <button id="btnBackToTop" class="back-to-top-btn"
+            onclick="keAtasHalaman()">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+        <script>
+            //setiap kali user melakukan scroll, jalankan fungsi di dalam nya, fungsi ini akan dipanggil berulang-ulang
+            window.addEventListener('scroll', function() {
+                const btnTop =  document.getElementById ("btnBackToTop");
+                if (window.scrollY > 300){
+                    btnTop.style.display = "flex";      
+                } else {
+                    btnTop.style.display = "none";
+                }
+            });
 
-        <!-- Grid Cards -->
-        <div class="card-grid">
-            
-            <!-- Card 1 -->
-            <div class="card">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=600&auto=format&fit=crop" alt="Nutrisi Makanan Sehat">
-                </div>
-                <div class="card-content">
-                    <div class="card-meta">
-                        <span class="badge">Nutrisi</span>
-                        <span class="read-time">5 mnt baca</span>
-                    </div>
-                    <h3 class="card-title">5 Langkah Memulai Pola Makan Sehat Tanpa Diet Menyiksa</h3>
-                    <p class="card-text">
-                        Pelajari cara meyeimbangkan porsi karbohidrat, protein, dan serat harian secara bertahap tanpa perlu rasa lapar berlebihan.
-                    </p>
-                    <a href="#" class="read-more">Baca Selengkapnya &rarr;</a>
-                </div>
-            </div>
+            function keAtasHalaman(){
+                window.scrollTo({
+                    top: 0, behavior: "smooth"
+                    //bergulir halus ke bagian paling atas//
+                })
+            }
+        </script>
+     </section>
 
-            <!-- Card 2 -->
-            <div class="card">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=600&auto=format&fit=crop" alt="Kebugaran Langkah Kaki">
-                </div>
-                <div class="card-content">
-                    <div class="card-meta">
-                        <span class="badge">Kebugaran</span>
-                        <span class="read-time">4 mnt baca</span>
-                    </div>
-                    <h3 class="card-title">Berapa Langkah Kaki yang Sebenarnya Dibutuhkan Tubuh?</h3>
-                    <p class="card-text">
-                        Kupas tuntas mitos 10.000 langkah dan fakta ilmiah tentang kebutuhan gerak harian untuk menjaga kesehatan jantung dan stamina.
-                    </p>
-                    <a href="#" class="read-more">Baca Selengkapnya &rarr;</a>
-                </div>
-            </div>
 
-            <!-- Card 3 -->
-            <div class="card">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=600&auto=format&fit=crop" alt="Pola Tidur">
-                </div>
-                <div class="card-content">
-                    <div class="card-meta">
-                        <span class="badge">Pola Tidur</span>
-                        <span class="read-time">6 mnt baca</span>
-                    </div>
-                    <h3 class="card-title">Rahasia Tidur Nyenyak Demi Produktivitas Maksimal</h3>
-                    <p class="card-text">
-                        Kualitas tidur menentukan metabolisme tubuh. Terapkan 4 kebiasaan malam ini untuk bangun dengan energi penuh keesokan hari.
-                    </p>
-                    <a href="#" class="read-more">Baca Selengkapnya &rarr;</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-</body>
+        
+  </body>
 </html>

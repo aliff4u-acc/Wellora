@@ -35,10 +35,11 @@ header {
   display: flex;
   align-items: center;
   gap: 28px;
+  color: black;
 }
 
 .nav-item {
-  color: #1f2933;
+  color: #12372a;
   text-decoration: none;
   font-weight: 600;
   font-size: 15px;
@@ -48,6 +49,7 @@ header {
   color: #2ead70;
   transition: color 0.2s ease;
 }
+
 .btn-unduh {
   background-color: #2ead70;
   padding: 10px 20px;
@@ -61,6 +63,7 @@ header {
   align-items: center;
   box-shadow: 0 4px 12px rgba(46, 173, 112, 0.25);
 }
+
 .btn-unduh:hover {
   background-color: #248c5a;
   transform: translateY(-2px);
@@ -320,6 +323,7 @@ header {
 .card i {
   color: #2aad70;
   font-size: 20px;
+  display: flex;
 }
 
 .card strong {
@@ -428,11 +432,15 @@ header {
   margin-top: 20px;
 }
 
+.card {
+  display: flex;
+}
+
 .card-item {
   background-color: #294b3c;
   padding: 16px 24px;
   line-height: 1.5;
-  width: 240px;
+  width: 220px;
   border-radius: 16px;
 }
 
@@ -445,8 +453,8 @@ header {
 }
 
 .card-item-desc {
-  font-size: 12px;
-  color: #cbefdb;
+  font-size: 14px;
+  color: #6c757d;
 }
 
 * {
@@ -719,169 +727,27 @@ body {
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family:
-    "Plus Jakarta Sans",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    sans-serif;
-}
-
-.body {
-  background-color: #f8faf8;
-  color: #2d3748;
+.back-to-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  font-size: 18px;
   display: flex;
+  background-color: #2ead70;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  min-height: 100;
-  padding: 40px 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(46, 173, 112, 0.25);
+  transition: all 0.2s ease;
+  z-index: 1000;
 }
 
-.blog-section {
-  max-width: 1100px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.header-container {
-  text-align: center;
-  margin-bottom: 48px;
-}
-
-.category-subtitle {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #1b3b2b;
-  margin-bottom: 12px;
-}
-
-.main-title {
-  font-size: 32px;
-  font-weight: 800;
-  color: #0f291e;
-  line-height: 1.25;
-  margin-bottom: 16px;
-}
-
-.description {
-  font-size: 14px;
-  color: #64748b;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.card {
-  background-color: #ffffff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-  display: flex;
-  flex-direction: column;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-}
-
-.card-image {
-  width: 100%;
-  height: 190px;
-  overflow: hidden;
-}
-
-.card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.card-content {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.card-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 14px;
-}
-
-.badge {
-  background-color: #ebf5ee;
-  color: #2e7d52;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 4px 12px;
-  border-radius: 20px;
-}
-
-.read-time {
-  font-size: 12px;
-  color: #94a3b8;
-}
-
-.card-title {
-  font-size: 16px;
-  font-weight: 700;
-  color: #0f291e;
-  line-height: 1.4;
-  margin-bottom: 12px;
-}
-
-.card-text {
-  font-size: 13px;
-  color: #64748b;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  flex-grow: 1;
-}
-
-.read-more {
-  font-size: 13px;
-  font-weight: 700;
-  color: #2e7d52;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.read-more:hover {
-  color: #1b3b2b;
-}
-
-@media (max-width: 900px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .main-title {
-    font-size: 24px;
-  }
+.back-to-top-btn:hover {
+  background-color: #12372a;
+  transform: translateY(-2px);
 }
