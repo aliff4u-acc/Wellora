@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lima langkah sederhana untuk membangun pola makan sehat tanpa diet ketat.">
+    <title>5 Langkah Memulai Pola Makan Sehat | Wellora</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" href="Asset/logo wellora.png" type="image/x-icon">
+</head>
+
+<body>
+    <main class="container">
+        <article class="detail-card">
+            <a href="Index.html#Artikel" class="back-btn">
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                Kembali ke artikel
+            </a>
+
+            <img
+                src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1200&q=80"
+                alt="Beragam sayuran segar untuk pola makan sehat"
+                class="detail-banner">
+
+            <div class="detail-meta-row">
+                <span class="badge badge-nutrisi">Nutrisi</span>
+                <span class="meta-item"><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 menit baca</span>
+                <span class="meta-item"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 14 Oktober 2026</span>
+            </div>
+
+            <h1 class="detail-main-title">5 Langkah Memulai Pola Makan Sehat Tanpa Diet Menyiksa</h1>
+
+            <div class="detail-intro">
+                <p>
+                    Memulai pola makan sehat tidak harus dengan mengurangi porsi secara drastis atau menahan lapar.
+                    Perubahan kecil yang bisa dijalani setiap hari biasanya lebih mudah dipertahankan daripada aturan
+                    diet yang terlalu ketat.
+                </p>
+            </div>
+
+            <section class="article-step">
+                <h2 class="step-title">1. Terapkan Prinsip Piring Sehat
+</h2>
+                <p class="step-content">
+                    Cobalah membagi piring makan Anda dengan rasio ideal: 50% diisi sayuran segar dan buah-buahan kaya serat, 25% protein berkualitas (seperti ikan laut, dada ayam, telur, tahu, atau tempe), dan 25% karbohidrat kompleks (nasi merah, ubi jalar, kentang kukus, atau oatmeal).
+
+                </p>
+            </section>
+
+            <section class="article-step">
+                <h2 class="step-title">2. angan Pernah Lewatkan Sarapan Bergizi
+</h2>
+                <p class="step-content">
+                    Sarapan dengan paduan protein dan serat membantu menstabilkan kadar gula darah sejak pagi, mencegah lonjakan hormon insulin berlebih, serta secara efektif menekan dorongan mengonsumsi camilan manis berkalori kosong di siang hari.
+
+            </section>
+
+            <section class="article-step">
+                <h2 class="step-title">3. Cukupi Kebutuhan Air Sebelum Makan</h2>
+                <p class="step-content">
+                    Otak manusia sering kali keliru menafsirkan sinyal dehidrasi ringan sebagai rasa lapar. Membiasakan diri meminum segelas air putih hangat 15 menit sebelum jam makan utama terbukti melancarkan sekresi enzim pencernaan dan membantu mengontrol porsi makan secara alami.
+
+                </p>
+            </section>
+
+            <section class="article-step">
+                <h2 class="step-title">4. Gunakan Aturan Fleksibilitas 80/20
+</h2>
+                <p class="step-content">
+                    Hidup sehat harus dinikmati tanpa tekanan psikologis. Jadikan 80% dari apa yang Anda konsumsi adalah makanan utuh alami padat nutrisi, dan sisakan 20% ruang untuk menikmati hidangan favorit keluarga tanpa rasa bersalah.
+
+            </section>
+
+            <section class="article-step">
+                <h2 class="step-title">5. 5. Pantau Asupan dengan Santai Lewat Wellora
+</h2>
+                <p class="step-content">
+                    Melalui fitur pencatatan pintar di aplikasi Wellora, Anda dapat memantau komposisi nutrisi harian secara praktis. Konsistensi kecil yang dilakukan setiap hari akan membawa transformasi besar dan langgeng bagi kesehatan tubuh Anda!
+
+                </p>
+            </section>
+
+            <div class="share-section">
+                <span class="share-label">
+                    <i class="fa-solid fa-share-nodes" aria-hidden="true"></i>
+                    Bagikan artikel
+                </span>
+                <div class="share-buttons">
+                    <button type="button" class="share-icon-btn" onclick="shareArticle('whatsapp')" aria-label="Bagikan ke WhatsApp" title="Bagikan ke WhatsApp">
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                    </button>
+
+                    <button type="button" class="share-icon-btn" onclick="shareArticle('telegram')" aria-label="Bagikan ke Telegram" title="Bagikan ke Telegram">
+                        <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+                    </button>
+
+                    <button type="button" class="share-icon-btn" onclick="shareArticle('x')" aria-label="Bagikan ke X" title="Bagikan ke X">
+                        <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                    </button>
+
+                    <button type="button" class="share-icon-btn" onclick="copyArticleLink()" aria-label="Salin tautan artikel" title="Salin tautan">
+                        <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <p id="share-status" class="share-status" role="status" aria-live="polite" hidden></p>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        const articleTitle = "5 Langkah Memulai Pola Makan Sehat Tanpa Diet Menyiksa - Wellora";
+
+        function shareArticle(platform) {
+            const pageUrl = window.location.href;
+            const encodedUrl = encodeURIComponent(pageUrl);
+            const encodedTitle = encodeURIComponent(articleTitle);
+            let shareUrl;
+
+            if (platform === "whatsapp") {
+                shareUrl = `https://wa.me/?text=${encodeURIComponent(`${articleTitle} ${pageUrl}`)}`;
+            } else if (platform === "telegram") {
+                shareUrl = `https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}`;
+            } else if (platform === "x") {
+                shareUrl = `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`;
+            } else {
+                showToast("Opsi berbagi tidak tersedia.");
+                return;
+            }
+
+            window.open(shareUrl, "_blank", "noopener,noreferrer");
+        }
+
+        async function copyArticleLink() {
+            try {
+                await navigator.clipboard.writeText(window.location.href);
+                showToast("Tautan artikel berhasil disalin.");
+            } catch (error) {
+                const textArea = document.createElement("textarea");
+                textArea.value = window.location.href;
+                textArea.setAttribute("readonly", '');
+                textArea.style.position = "fixed";
+                textArea.style.opacity = "0";
+                document.body.appendChild(textArea);
+                textArea.select();
+
+                let copied = false;
+                try {
+                    copied = document.execCommand("copy");
+                } catch (fallbackError) {
+                    console.error("Gagal menyalin tautan artikel:", fallbackError);
+                } finally {
+                    textArea.remove();
+                }
+
+                if (copied) {
+                    showToast("Tautan artikel berhasil disalin.");
+                } else {
+                    console.error("Clipboard API tidak dapat digunakan:", error);
+                    showToast("Tautan tidak dapat disalin. Salin alamat dari bilah alamat.");
+                }
+            }
+        }
+
+        function showToast(message) {
+            const status = document.getElementById("share-status");
+            status.textContent = message;
+            status.hidden = false;
+        }
+    </script>
+    
+</body>
+</html>
