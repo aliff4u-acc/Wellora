@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>berita</title>
+    <style>
+      .daftar-kartu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .kartu {
+        border: 1px solid #ddd;
+        padding: 16px;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="daftar-kartu" id="daftar-kartu"></main>
+
+    <template id="template">
+      <article class="kartu">
+        <h2 class="judul"></h2>
+        <p class="deskripsi"></p>
+      </article>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
