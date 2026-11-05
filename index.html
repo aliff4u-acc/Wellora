@@ -267,7 +267,7 @@
             <!-- Card 1 -->
             <div class="card-berita" id="Artikel">
                 <div class="card-image">
-                    <img src="Asset/Logo Buah.jpeg" alt="Nutrisi Makanan Sehat">
+                    <img src="asset/Logo Buah.jpeg" alt="Nutrisi Makanan Sehat">
                 </div>
                 <div class="card-title">
                     <div class="card-meta">
@@ -285,7 +285,7 @@
             <!-- Card 2 -->
             <div class="card-berita">
                 <div class="card-image">
-                    <img src="Asset/Logo kaki.jpeg" alt="Kebugaran Langkah Kaki">
+                    <img src="asset/Logo kaki.jpeg" alt="Kebugaran Langkah Kaki">
                 </div>
                 <div class="card-title">
                     <div class="card-meta">
@@ -303,7 +303,7 @@
             <!-- Card 3 -->
             <div class="card-berita">
                 <div class="card-image">
-                    <img src="Asset/Logo Kucing.jpeg" alt="Pola Tidur">
+                    <img src="asset/Logo Kucing.jpeg" alt="Pola Tidur">
                 </div>
                 <div class="card-title">
                     <div class="card-meta">
@@ -320,7 +320,44 @@
 
         </div>
     </section>
-    
+
+    <template id="template-artikel-card">
+        <div class="card-berita">
+            <div class="card-image">
+                <img src="" alt="">
+            </div>
+            <div class="card-title">
+                <div class="card-meta">
+                    <span class="badge"></span>
+                    <span class="read-time"></span>
+                </div>
+                <h3 class="card-title"></h3>
+                <p class="card-text"></p>
+                <a href="#" class="read-more">Baca Selengkapnya &rarr;</a>
+            </div>
+        </div>
+    </template>
+
+    <!--BMI -->
+    <form class="bmi-form" id="bmi-form">
+        <h2 class="bmi-title">Kalkulator BMI</h2>
+        <p class="bmi-desc">Hitung Indeks Massa Tubuh Anda untuk mengetahui kategori berat badan.</p>
+        <div class="form-group">
+            <label for="tinggi">Tinggi Badan (cm)</label>
+            <input type="number" id="tinggi" name="tinggi" required>
+        </div>
+        <div class="form-group">
+            <label for="berat">Berat Badan (kg)</label>
+            <input type="number" id="berat" name="berat" required>
+        </div>
+        <button type="submit" class="btn-calculate">Hitung BMI</button>
+        <div id="hasil-bmi" class="hasil-bmi">
+            <p class="result-value">0.00</p>
+            <p class="result-category"></p>
+
+        </div>
+    </form>
+
   <section class="contact-section" id="Kontak">
     <div class="container">
       
@@ -476,9 +513,8 @@
                     //bergulir halus ke bagian paling atas//
                 })
             }
-            
         </script>
     </section>
      
   </body>
- </html>l
+ </html>

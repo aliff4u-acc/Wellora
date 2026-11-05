@@ -40,19 +40,48 @@ const dataBerita = [
 const template = document.getElementById("template"); //1
 const daftarKartu = document.getElementById("daftar-kartu");
 
-dataBerita.forEach(({ id, judul, deskripsi, isi }) => {
-  // membuat salinan template html yang akan diisi dengan data berita//
-  const templateClone = template.content.cloneNode(true);
+if (daftarKartu && template) {
+  dataBerita.forEach(({ id, judul, deskripsi }) => {
+    // membuat salinan template html yang akan diisi dengan data berita//
+    const templateClone = template.content.cloneNode(true);
 
-  //mengambil element article dari salinan template dan mengisi datanta//
-  const kartu = templateClone.querySelector("article");
+    //mengambil element article dari salinan template dan mengisi datanta//
+    const kartu = templateClone.querySelector(".kartu");
+    kartu.href = `berita-detail.html?id=${id}`;
 
-  //mengisi data
-  kartu.querySelector(".judul").textContent = judul;
-  kartu.querySelector(".deskripsi").textContent = deskripsi;
+    //mengisi data
+    kartu.querySelector(".judul").textContent = judul;
+    kartu.querySelector(".deskripsi").textContent = deskripsi;
 
-  //menambahkan kartu ke dalam daftar kartu//
-  daftarKartu.appendChild(kartu);
-});
+    //menambahkan kartu ke dalam daftar kartu//
+    daftarKartu.appendChild(kartu);
+  });
+}
 
-const detailBerita = document.getElementById("detail-berita");
+//menampilkan detail berita//
+
+//mengambil elemen detail berita//
+const detailBerita = document.getElementById("berita-detail");
+
+//memastikan elemen detail berita//
+if (detailBerita) {
+  //mengambil parameter dari url//
+  const parameter = new URLSearchParams(window.location.search);
+
+  const idBerita = parameter.get("id");
+
+  const berita = dataBerita.find((item) => item.id === parseInt(idBerita));
+
+  if (berita) {
+    const judulBerita = document.getElementById("judul-berita");
+    const deskripsiBerita = document.getElementById("deskripsi-berita");
+    const isiBerita = document.getElementById("isi-berita");
+
+    //mengisi data setiap elemen//
+    judulBerita.textContent = berita.judul;
+    deskripsiBerita.textContent = berita.deskripsi;
+    isiBerita.textContent = berita.isi;
+
+    detailBerita.hidden = false;
+  }
+}
